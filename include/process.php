@@ -15,7 +15,7 @@
 	
 	if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) === false && $_POST['email']!= "" ) 
 	{
-     
+     		$error[] = "Email was not validated";
         } 
 	else 
 	{
@@ -30,7 +30,7 @@
 		exit;
 	}
 	
-	$statement = $db_con->prepare("select * from users where email = :email AND password = :password" );
+	$statement = $db_con->prepare("select * from users where email = :email AND pw = :password" );
         $statement->execute(array(':email' => $_POST['email'],'password'=> sha1($_POST['password'])));
 	$row = $statement->fetchAll(PDO::FETCH_ASSOC);
 	$temppw=$row[0]['temppw'];

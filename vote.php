@@ -209,7 +209,6 @@ header('location: index.php');
 		if (!empty($_POST) && !isset($_POST['Amend']) && !isset($_POST['Revoke']) && !($_POST['Deferred']))
 		{
 			$motionid=$_POST['motionid'];
-			#echo "Debug: " . $motionid;
 			$motion=$db_con->prepare ("SELECT * from motions where motion_id = :motionid");
 			$motion->bindParam(':motionid',$motionid);
 			$motion->execute();
@@ -234,7 +233,7 @@ header('location: index.php');
 			?>
 	      <br />
 	     	 <h2>Change Log</h2>
-		<table border="1" width="100%">
+		<table border="1">
 			<tr>
 				<th>User</th>
 				<th>Date</th>
@@ -270,7 +269,7 @@ header('location: index.php');
 				?>
 			<br /><br />
 			<h2>Current Votes</h2>
-			<table border="1" width="100%">
+			<table border="1">
 			<tr>
 				<th>User</th>
 				<th>Date</th>
@@ -299,7 +298,7 @@ header('location: index.php');
 
 		<br /><br />
 		<h2>Discussions</h2>
-		<table border="1" width="100%">
+		<table border="1">
 		<tr>
 			<th>User</th>
 			<th>Date</th>
@@ -462,7 +461,6 @@ header('location: index.php');
 		elseif (isset($_POST['Amend']))
 		{
 			$motionid=$_POST['motionid'];
-			#echo "Debug: " . $motionid;
 			$motion=$db_con->prepare ("SELECT * from motions where motion_id = :motionid");
 			$motion->bindParam(':motionid',$motionid);
 			$motion->execute();
@@ -482,7 +480,7 @@ header('location: index.php');
 			?>
 			<br /><br />
 			<h2>Current Votes</h2>
-			<table border="1" width="100%">
+			<table border="1">
 			<tr>
 				<th>User</th>
 				<th>Date</th>
@@ -511,7 +509,7 @@ header('location: index.php');
 
 		<br /><br />
 		<h2>Discussions</h2>
-		<table border="1" width="100%">
+		<table border="1">
 		<tr>
 			<th>User</th>
 			<th>Date</th>

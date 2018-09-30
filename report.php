@@ -41,7 +41,7 @@ header('location: index.php');
 			?>
 			<br /><br />
 			<h2>Current Votes</h2>
-			<table border="1" width="100%">
+			<table border="1">
 				<tr>
 					<th>User</th>
 					<th>Date</th>
@@ -69,7 +69,7 @@ header('location: index.php');
 
 		<br /><br />
 		<h2>Discussions</h2>
-		<table border="1" width="100%">
+		<table border="1">
 			<tr>
 				<th>User</th>
 				<th>Date</th>
@@ -97,7 +97,7 @@ header('location: index.php');
 			
 				<br /><br />
 		<h2>Change Log</h2>
-		<table border="1" width="100%">
+		<table border="1">
 			<tr>
 				<th>User</th>
 				<th>Date</th>

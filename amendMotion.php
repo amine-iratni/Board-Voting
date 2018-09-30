@@ -5,6 +5,7 @@
 		header('location: index.php');
 	}//end of if(empty($_SESSION['user_id']))
 ?>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Amending Motion</title>
@@ -133,8 +134,8 @@
 						$boardEmail .= $row['email'] .",";
 					}//end of while ($row=$userSearch->fetch(PDO::FETCH_ASSOC))
 					amendmail($motionid,$boardEmail);
-				}//end of elseif ($newmotiondesc != $existingmotiondec)
-			}//end of if ($newmotiondesc != "")
+			}
+	}//end of if ($newmotiondesc != "")
 		?>
 		<br /><a href="dashboard.php">Main Dashboard</a>
 	</body>

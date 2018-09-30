@@ -44,7 +44,7 @@
   <div class="subnavbar-inner">
     <div class="container">
       <ul class="mainnav">
-        <li><a href="dashboard.php"><i class="icon-dashboard"></i><span>Dashboard</span> </a> </li>
+        <li><a href="dashboard.php"><em class="icon-dashboard"></em><span>Dashboard</span> </a> </li>
 	<li class="active"> <a href ="add.php"><i class ="icon-dashboard"></i><span>Add Motion</span></a></li>
 	<li><a href="vote.php"><i class ="icon-dashboard"></i><span>Vote</span></a></li>
 	 <li><a href="discussions.php"><i class ="icon-dashboard"></i><span>Discussions</span></a></li>
