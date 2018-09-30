@@ -45,36 +45,36 @@
     <div class="container">
       <ul class="mainnav">
         <li><a href="dashboard.php"><em class="icon-dashboard"></em><span>Dashboard</span> </a> </li>
-	<li class="active"> <a href ="add.php"><i class ="icon-dashboard"></i><span>Add Motion</span></a></li>
-	<li><a href="vote.php"><i class ="icon-dashboard"></i><span>Vote</span></a></li>
-	 <li><a href="discussions.php"><i class ="icon-dashboard"></i><span>Discussions</span></a></li>
-	<li><a href="userprefs.php"><i class ="icon-dashboard"></i><span>Prefences</span></a></li>
-         <li><a href="logout.php"><i class="icon-dashboard"></i><span>Logout</span></a> </li>
+<li class="active"> <a href ="add.php"><em class ="icon-dashboard"></em><span>Add Motion</span></a></li>
+<li><a href="vote.php"><em class ="icon-dashboard"></em><span>Vote</span></a></li>
+ <li><a href="discussions.php"><em class ="icon-dashboard"></em><span>Discussions</span></a></li>
+<li><a href="userprefs.php"><em class ="icon-dashboard"></em><span>Prefences</span></a></li>
+ <li><a href="logout.php"><em class="icon-dashboard"></em><span>Logout</span></a> </li>
 
-      </ul>
-    </div>
-    <!-- /container --> 
-  </div>
-  <!-- /subnavbar-inner --> 
+</ul>
+</div>
+<!-- /container --> 
+</div>
+<!-- /subnavbar-inner --> 
 </div>
 <!-- /subnavbar -->
 <div class="main">
-  <div class="main-inner">
-    <div class="container">
-	<form action="addmotion.php"  method="post">
-		<FIELDSET>
-			<LEGEND><b>Submit a Motion</b></LEGEND>
-			<p><label>Motion Name: </label><input type="text" name="motionname" id="motionname" /></p>
-			<p>Session:<br />
-				<select name="boardsession" id="boardsession">
-					<option value=""></option>
-					<option value="Executive">Executive</option>
-					<option value="Public">Public</option>
-				</select>
-			</p>
-			<p><label>Motion Text: </label><textarea name="motiontext" id="motiontext" style="width: 1136px; height: 122px;"></textarea>
-			<br /><input type="submit" value="Submit" name="Submit" />
-			<input type="reset" value="Reset" name="Reset" />
+<div class="main-inner">
+<div class="container">
+<form action="addmotion.php"  method="post">
+	<FIELDSET>
+		<LEGEND><strong>Submit a Motion</strong></LEGEND>
+		<p><label>Motion Name: </label><input type="text" name="motionname" id="motionname" /></p>
+		<p>Session:<br />
+			<select name="boardsession" id="boardsession">
+				<option value=""></option>
+				<option value="Executive">Executive</option>
+				<option value="Public">Public</option>
+			</select>
+		</p>
+		<p><label>Motion Text: </label><textarea name="motiontext" id="motiontext" style="width: 1136px; height: 122px;"></textarea>
+		<br /><input type="submit" value="Submit" name="Submit" />
+		<input type="reset" value="Reset" name="Reset" />
 		</FIELDSET>
 	</form>
 

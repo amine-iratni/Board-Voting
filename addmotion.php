@@ -12,6 +12,7 @@
 </head>
 <body>
 	<?php
+		$userid=$_['user_id'];
 		include_once('include/db-config.php');
 		function addmailing($votesmotionid, $boardEmail)
 		{
@@ -107,13 +108,13 @@
 					$vote = "MOTIONED";
 					$auditMotionAdd = $db_con->prepare 
 						("INSERT into audit (user_id, action) VALUE (:users_id, :action)");
-					$auditMotionAdd -> bindParam(':users_id',$_SESSION['user_id']);
+					$auditMotionAdd -> bindParam(':users_id',$userid);
 					$action="Added motion id " . $votesmotionid;
 					$auditMotionAdd -> bindParam(':action',$vote);
 					$auditMotionAdd -> execute();
 					
 					$votestatement = $db_con->prepare ("INSERT into votes (users_id,motions_id,vote) VALUES (:users_id, :motion_id, :vote)");
-					$votestatement -> bindParam(':users_id', $_SESSION['user_id']);
+					$votestatement -> bindParam(':users_id', $userid);
 					$votestatement -> bindParam(':motion_id', $votesmotionid);
 					$votestatement -> bindParam(':vote', $vote);
 					$votestatement->execute();
