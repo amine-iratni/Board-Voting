@@ -126,6 +126,9 @@ Bootstrap Admin Template by EGrappler.com
 
 .news-item-date {
 	display: table-cell;
+		width: 75px;
+	vertical-align: middle;
+	text-align: center;
 }
 
 .news-item-detail {
@@ -135,13 +138,6 @@ Bootstrap Admin Template by EGrappler.com
 .news-item-title {
 	font-size: 13px;
 	font-weight: 600;
-}
-
-.news-item-date {
-	width: 75px;
-	vertical-align: middle;
-	text-align: center;
-	
 }
 
 .news-item-day {
