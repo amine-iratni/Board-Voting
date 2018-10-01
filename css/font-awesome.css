@@ -34,7 +34,26 @@
 }
 /* FONT AWESOME CORE
  * -------------------------- */
-[class^="icon-"],
+[class^="icon-"] {
+    display: inline;
+  width: auto;
+  height: auto;
+  line-height: normal;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  margin-top: 0;
+    font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
+font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+}
+
+
+
 [class*=" icon-"] {
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 font-weight: normal;
@@ -158,7 +177,6 @@ a [class*=" icon-"] {
 /* BOOTSTRAP SPECIFIC CLASSES
  * -------------------------- */
 /* Bootstrap 2.0 sprites.less reset */
-[class^="icon-"],
 [class*=" icon-"] {
   display: inline;
   width: auto;
