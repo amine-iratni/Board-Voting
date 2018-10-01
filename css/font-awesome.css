@@ -36,8 +36,8 @@
  * -------------------------- */
 [class^="icon-"],
 [class*=" icon-"] {
-  font-family: FontAwesome;
-  font-weight: normal;
+    font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
+font-weight: normal;
   font-style: normal;
   text-decoration: inherit;
   -webkit-font-smoothing: antialiased;
