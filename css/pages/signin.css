@@ -33,10 +33,6 @@ body{
 	padding: 16px 28px 23px;
 } 
 
-.login-fields {
-	
-}
-
 .login-fields .field {
 	margin-bottom: 1.25em;
 }
@@ -140,7 +136,7 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 	height: 32px; 
 	width: 157px; 
 	display: block;
-	
+	display: inline-block;
 	background: url(../../img/signin/twitter_btn.png) no-repeat; 
 	
 }
@@ -172,10 +168,6 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 .fb a {
 	padding: 5px 0 0 31px; 
 	
-}
-
-.twitter, .fb {
-	display: inline-block;
 }
 
 .twitter a:hover, .fb a:hover {
