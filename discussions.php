@@ -42,16 +42,17 @@ header('location: index.php');
 <div class="subnavbar">
   <div class="subnavbar-inner">
     <div class="container">
-      <ul class="mainnav">
-        <li><a href="dashboard.php"><em class="icon-dashboard"></em><span>Dashboard</span> </a> </li>
-	<li> <a href ="add.php"<>em class ="icon-dashboard"></em><span>Add Motion</span></a></li>
-	<li><a href="vote.php"><em class ="icon-dashboard"></em><span>Vote</span></a></li>
-	 <li class="active"><a href="discussions.php"><em class ="icon-dashboard"></em><span>Discussions</span></a></li>
-	<li><a href="userprefs.php"><em class ="icon-dashboard"></em><span>Prefences</span></a></li>
+    	 <ul class="mainnav">
+        <li class="active"><a href="dashboard.php"><em class="icon-dashboard"></em><span>Dashboard</span> </a> </li>
+        <li> <a href ="add.php"><em class ="icon-dashboard"></em><span>Add Motion</span></a></li>
+        <li><a href="vote.php"><em class ="icon-dashboard"></em><span>Vote</span></a></li>
+         <li><a href="discussions.php"><em class ="icon-dashboard"></em><span>Discussions</span></a></li>
+        <li><a href="userprefs.php"><em class ="icon-dashboard"></em><span>Prefences</span></a></li>
          <li><a href="logout.php"><em class="icon-dashboard"></em><span>Logout</span></a> </li>
 
       </ul>
-    </div>
+
+	</div>
     <!-- /container --> 
   </div>
   <!-- /subnavbar-inner --> 
