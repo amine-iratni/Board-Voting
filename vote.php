@@ -553,7 +553,7 @@ header('location: index.php');
 	?>
 	<p>Please choose a motion to vote on. Only one motion can be voted
 		on at a time</p>
-		<table border="1" width="100%">
+		<table border="1">
                 <tr>
                         <th>Motion ID</th>
                         <th>Motion Name</th>

@@ -1,6 +1,7 @@
 <?php
 	session_start();
-	if(empty($_SESSION['user_id']))
+	$userid=$_SESSION['user_id'];
+	if(empty($userid))
 	{
 		header('location: index.php');
         }
@@ -22,14 +23,14 @@
 			if ( $newemail == $confirmemail )
 			{
             			$statement = $db_con->prepare("select * from users where users_id = :usersid AND email = :email;" );
-        			$statement->execute(array(':usersid' => $_SESSION['user_id'],'email'=> $currentEmail));
+        			$statement->execute(array(':usersid' => $userid,'email'=> $currentEmail));
                 		$row = $statement->fetchAll(PDO::FETCH_ASSOC);
 				if(count($row)>0)
 				{
 					$emailUpdatestatement = $db_con->prepare("update users set email = :email where 
 									users_id =:usersid;");
 					$emailUpdatestatement->execute(array(':email' => $confirmemail,
-						':usersid'=>$_SESSION['user_id']));
+						':usersid'=>$userid));
 					echo "<br />Your email has been changed";
 					$emailUpdatestatement->closeCursor();
 				}

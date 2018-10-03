@@ -706,7 +706,6 @@
 
         if (!this.isShown) return
 
-        var that = this
         this.isShown = false
 
         $('body').removeClass('modal-open')
@@ -750,8 +749,7 @@
   }
 
   function backdrop( callback ) {
-    var that = this
-      , animate = this.$element.hasClass('fade') ? 'fade' : ''
+    var animate = this.$element.hasClass('fade') ? 'fade' : ''
 
     if (this.isShown && this.options.backdrop) {
       var doAnimate = $.support.transition && animate
@@ -998,8 +996,6 @@
     }
 
   , hide: function () {
-      var that = this
-        , $tip = this.tip()
 
       $tip.removeClass('in')
 
@@ -1523,7 +1519,7 @@
   , lookup: function (event) {
       var that = this
         , items
-        , q
+       
 
       this.query = this.$element.val()
 

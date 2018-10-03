@@ -76,9 +76,13 @@
 			$headers[]= 'From: Tanyard Springs Votes <noreply@tanyardspringshoa.com>';
 
 			if(mail($to,$subject,$message, implode("\r\n", $headers)))
+			{
 				print "<br />Email successfully sent";
+			}
 			else
+			{
 				print "<br />An error occured";	
+			}
 		}//end of function
 					
 			$motionid=$_POST['motionid'];
