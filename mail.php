@@ -27,7 +27,7 @@
                                 	   <h2>Date Added:</h2>" . $dateadded . "<br />
                                 	   <h2>Motion Text</h2>" .
                                 	   $motiondesc .
-					 "<h2>Session</h2> .
+					 "<h2>Session</h2>".
 					 $session .
                                 	   "<h2>Disposition:</h2>" .
                                 	   $disposition;
