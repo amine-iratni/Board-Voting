@@ -67,7 +67,7 @@ header('location: index.php');
 
 		if (!empty($_POST))
 		{
-			$motionid=$_POST['motionid'];
+			$motionid=htmlspecialchars($_POST['motionid']);
 			#echo "Debug: " . $motionid;
 			$motion=$db_con->prepare ("SELECT * from motions where motion_id = :motionid");
 			$motion->bindParam(':motionid',$motionid);
