@@ -356,9 +356,9 @@ textarea {
 	background: #f9f6f1;
 	background:-moz-linear-gradient(top, #f9f6f1 0%, #f2efea 100%); /* FF3.6+ */
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f6f1), color-stop(100%,#f2efea)); /* Chrome,Safari4+ */
-	background:-webkit-linear-gradient(top, #f9f6f1 0%,#f2efea 100%); /* Chrome10+,Safari5.1+ */
-	background:-o-linear-gradient(top, #f9f6f1 0%,#f2efea 100%); /* Opera11.10+ */
-	background:-ms-linear-gradient(top, #f9f6f1,#f2efea); /* IE10+ */
+	background:-webkit-linear-gradient(45, #f9f6f1,#f2efea); /* Chrome10+,Safari5.1+ */
+	background:-o-linear-gradient(45, #f9f6f1,#f2efea); /* Opera11.10+ */
+	background:-ms-linear-gradient(45, #f9f6f1,#f2efea); /* IE10+ */
 	background:linear-gradient(45, #f9f6f1,#f2efea); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f6f1', endColorstr='#f2efea');
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f6f1', endColorstr='#f2efea')";
