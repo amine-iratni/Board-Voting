@@ -4171,7 +4171,6 @@ a.list-group-item.active > .badge,
 
 .text-hide {
   font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
-  font: 0/0 a; 
   color: transparent;
   text-shadow: none;
   background-color: transparent;
