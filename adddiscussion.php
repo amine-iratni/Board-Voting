@@ -57,6 +57,7 @@ header('location: index.php');
 					$motiondesc=$row['motion_description'];
 					$body .= "<br ><br />Motion ID: " . $motionid;
 					$body .= "<br />Motion Name: " . $motionname;
+					$body .= "<br />Modified Date" . $dateadded;
 					$body .= "<br />Motion Text: " . $motiondesc;
 					$body .= "<br />";
 					$body .= $emailDiscussions;
