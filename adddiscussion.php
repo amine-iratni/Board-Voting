@@ -38,7 +38,10 @@ header('location: index.php');
 			{
 				$motion=$db_con->prepare ("SELECT * from motions where motion_id = :motionid");
 				$motion->bindParam(':motionid',$motionid);
-				if (!$motion->execute()) var_dump($motion->errorinfo());
+				if (!$motion->execute()) 
+				{
+					var_dump($motion->errorinfo());
+				}//End of if (!$motion->execute())
 				$body="<html>
 						<head>
 							<title>New Discussion Item</title>
@@ -57,7 +60,7 @@ header('location: index.php');
 					$body .= "<br />Motion Text: " . $motiondesc;
 					$body .= "<br />";
 					$body .= $emailDiscussions;
-				}//End of while
+				}//End of while ($row=$motion->fetch(PDO::FETCH_ASSOC))
 
 				$body .= "</body>";
 				$body .= "</html>";
@@ -70,9 +73,13 @@ header('location: index.php');
 			$headers[]= 'From: Tanyard Springs Votes <noreply@tanyardspringshoa.com>';
 			//mailing
 			if (mail($boardEmail,$subject,$message, implode("\r\n", $headers)))
+			{
 				print "<br />Email successfully sent";
+			}
 			else
+			{
 				print "<br />An error occured";
+			}
 		}//end of function
 		//End Added April 19, 2017
 ?>
@@ -112,7 +119,6 @@ header('location: index.php');
 	
 			<?php
 				
-				//echo $_SERVER['HTTP_REFERER'];
 				$motionid=$_POST['motionid'];
 				$userid=$_POST['userid'];
 				$text=$_POST['discussiontext'];
