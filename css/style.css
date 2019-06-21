@@ -10,18 +10,18 @@ Bootstrap Admin Template by EGrappler.com
 
 body {
 	background: #f9f6f1;
-	font: 13px/1.7em 'Open Sans';
+	  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
     
 p { 
-	font: 13px/1.7em 'Open Sans'; 	
+	  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
     
 input,
 button,
 select,
 textarea {
-  font-family: 'Open Sans';
+    font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 
 .dropdown .dropdown-menu {
@@ -359,7 +359,7 @@ textarea {
 	background:-webkit-linear-gradient(top, #f9f6f1 0%,#f2efea 100%); /* Chrome10+,Safari5.1+ */
 	background:-o-linear-gradient(top, #f9f6f1 0%,#f2efea 100%); /* Opera11.10+ */
 	background:-ms-linear-gradient(top, #f9f6f1 0%,#f2efea 100%); /* IE10+ */
-	background:linear-gradient(top, #f9f6f1 0%,#f2efea 100%); /* W3C */
+	background:linear-gradient(45, #f9f6f1 0%,#f2efea 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f6f1', endColorstr='#f2efea');
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f6f1', endColorstr='#f2efea')";
 	
